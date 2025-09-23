@@ -1,0 +1,3 @@
+langflow>=1.5.1
+reportlab>=4.4.4
+Faker>=37.8.0
