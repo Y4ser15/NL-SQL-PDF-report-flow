@@ -1,23 +1,23 @@
-NL → SQL → JSON → LLM → PDF (Langflow)
+# NL → SQL → JSON → LLM → PDF (Langflow)
 
 A Langflow flow that turns natural-language questions into SQLite SQL, summarizes results with an LLM, and generates a PDF via a custom component. Includes a tiny HTML chatbot page for quick testing.
 
 Quick start
-# 1) Create & activate venv
+## 1) Create & activate venv
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
-# 2) Install minimal deps
+## 2) Install minimal deps
 pip install -r requirements.txt
 
-# 3) (Optional) Create the SQLite DB with mock data
+## 3) (Optional) Create the SQLite DB with mock data
 python setup_database.py    # writes sample_data.db in this folder
 
-# 4) Run Langflow
+## 4) Run Langflow
 langflow run  # open the URL shown in terminal, set your LLM key in the UI if needed
 
 
-# Import & run the flow
+## Import & run the flow
 
 In Langflow UI → Import → select flows/nl_to_sql_json_to_pdf_report.json.
 
@@ -31,7 +31,7 @@ Total revenue in the last 30 days
 
 The final node returns a path to the generated PDF (default ./reports/report.pdf).
 
-# Simple HTML tester (optional)
+## Simple HTML tester (optional)
 
 Open web/chatbot.html directly, or serve the folder:
 
